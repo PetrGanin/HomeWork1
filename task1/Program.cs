@@ -1,16 +1,19 @@
-﻿// ввод 2-х значное число и вывод является ли оно кратным или нет.
-Console.WriteLine("введите чиcло");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите второе чиcло");
-int b = Convert.ToInt32(Console.ReadLine());
-int c = a%b;
-int c1 = a/b;
-if (c == 0)
-{ 
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
-    Console.WriteLine("является кратным" + c1);
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+Console.WriteLine("введите трехзначное чиcло");
+string namber = Console.ReadLine();
+string name = "-tom";
+
+if (namber[0] == name[0])
+{
+    Console.WriteLine("вторым числом является");
+    Console.WriteLine(namber[2]);
 }
 else
 {
-    Console.WriteLine($"не является кратным {c} остаток");
+    Console.WriteLine("вторым числом является");
+    Console.WriteLine(namber[1]);
 }
